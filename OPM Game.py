@@ -170,7 +170,7 @@ def loading():
 
 # Calculates combat damage in battle using 3 stats
 def combat_damage(attack_pwr, attack_buff, char_atk, defense, defense_buff):
-    return int(((char_atk * attack_buff) / (defense * defense_buff)) * (attack_pwr / 10))
+    return int(((char_atk * attack_buff) / (defense * defense_buff)) * (attack_pwr / 10.0))
 
 
 # Random crit and weak hit simulator (Weak hit x >= 95, Crit x<=5)
@@ -383,25 +383,25 @@ while Replay:
             else:
                 ComputerMove = random.randint(1, 2)
             while not UseMove:
-                print "\n\n\n"
+                print ("\n\n\n")
                 display_hp(UserHp, ComputerHp)
-                UserMove = raw_input("\nChoose a move (Enter info1, info2, etc. for info on a speific move):\n1. Water Stream Encampment\t\t2. Abandonment\n3. Fang Interpolation\t\t4. (Super) Water Stream Rock Smashing Fist \n")
+                UserMove = raw_input("\nChoose a move (Enter info1, info2, etc. for info on a specific move):\n1. Water Stream Encampment\t\t2. Abandonment\n3. Fang Interpolation\t\t4. (Super) Water Stream Rock Smashing Fist \n")
                 if str(UserMove) == "info1" or str(UserMove) == "Info1" or str(UserMove) == "INFO1":
-                    print Bang1
+                    print (Bang1)
                     time.sleep(2.5)
                 elif str(UserMove) == "info2" or str(UserMove) == "Info2" or str(UserMove) == "INFO2":
-                    print Bang2
+                    print (Bang2)
                     time.sleep(2.5)
                 elif str(UserMove) == "info3" or str(UserMove) == "Info3" or str(UserMove) == "INFO3":
-                    print Bang3
+                    print (Bang3)
                     time.sleep(2.5)
                 elif str(UserMove) == "info4" or str(UserMove) == "Info4" or str(UserMove) == "INFO4":
-                    print Bang4
+                    print (Bang4)
                     time.sleep(2.5)
                 elif str(UserMove) == "1":
                     UseMove = True
                     if UserSpe >= CompSpe:
-                        print""
+                        print("")
                         if ComputerHp > 0:
                             if ComputerMove == 1:
                                 print ""
@@ -412,11 +412,11 @@ while Replay:
                         else:
                             print ""
                     elif CompSpe > UserSpe:
-                        print""
+                        print("")
                 elif str(UserMove) == "2":
                     UseMove = True
                     if UserSpe >= CompSpe:
-                        print ""
+                        print ("")
                 elif str(UserMove) == "3":
                     print(" ")
                     UseMove = True
@@ -438,7 +438,7 @@ while Replay:
                         else:
                             print ("You defeated Crablante!")
                     elif CompSpe > UserSpe:
-                        print""
+                        print("")
                 elif str(UserMove) == "4" and Super == "Active" and not SuperUsed:
                     print(" ")
                     UseMove = True
