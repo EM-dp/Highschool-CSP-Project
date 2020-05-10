@@ -448,15 +448,15 @@ while Replay:
                         time.sleep(4)
                         if ComputerHp > 0:
                             if ComputerMove == 1:
-                                print ""
+                                print ("")
                             elif ComputerMove == 2:
-                                print ""
+                                print ("")
                             elif ComputerMove == 3:
-                                print ""
+                                print ("")
                         else:
                             print
                     elif CompSpe > UserSpe:
-                        print""
+                        print("")
                 else:
                     print("Invalid Input, please try again.")
                 time.sleep(2.5)
@@ -485,17 +485,17 @@ while Replay:
             else:
                 ComputerMove = computer_move_funct()
             while not UseMove:
-                print "\n\n\n"
+                print ("\n\n\n")
                 display_hp(UserHp, ComputerHp)
                 UserMove = raw_input("\nChoose a move (Enter info1, info2, etc. for info on a speific move):\n1. Water Stream Encampment\t\t2. Abandonment\n3. Fang Interpolation\t\t4. (Super) Water Stream Rock Smashing Fist \n")
                 if str(UserMove) == "info1" or str(UserMove) == "Info1" or str(UserMove) == "INFO1":
-                    print Genos1
+                    print (Genos1)
                 elif str(UserMove) == "info2" or str(UserMove) == "Info2" or str(UserMove) == "INFO2":
-                    print Genos2
+                    print (Genos2)
                 elif str(UserMove) == "info3" or str(UserMove) == "Info3" or str(UserMove) == "INFO3":
-                    print Genos3
+                    print (Genos3)
                 elif str(UserMove) == "info4" or str(UserMove) == "Info4" or str(UserMove) == "INFO4":
-                    print Genos4
+                    print (Genos4)
                 elif str(UserMove) == "1":
                     print(" ")
                     UseMove = True
@@ -535,17 +535,17 @@ while Replay:
             else:
                 ComputerMove = 0
             while not UseMove:
-                print "\n\n\n"
+                print ("\n\n\n")
                 display_hp(UserHp, ComputerHp)
                 UserMove = raw_input("\nChoose a move (Enter info1, info2, etc. for info on a speific move):\n1. Water Stream Encampment\t\t2. Abandonment\n3. Fang Interpolation\t\t4. (Super) Water Stream Rock Smashing Fist ")
                 if str(UserMove) == "info1" or str(UserMove) == "Info1" or str(UserMove) == "INFO1":
-                    print MetalBat1
+                    print (MetalBat1)
                 elif str(UserMove) == "info2" or str(UserMove) == "Info2" or str(UserMove) == "INFO2":
-                    print MetalBat2
+                    print (MetalBat2)
                 elif str(UserMove) == "info3" or str(UserMove) == "Info3" or str(UserMove) == "INFO3":
-                    print MetalBat3
+                    print (MetalBat3)
                 elif str(UserMove) == "info4" or str(UserMove) == "Info4" or str(UserMove) == "INFO4":
-                    print MetalBat4
+                    print (MetalBat4)
                 elif str(UserMove) == "1":
                     print(" ")
                     UseMove = True
@@ -586,7 +586,7 @@ while Replay:
             else:
                 ComputerMove = computer_move_funct()
             while not UseMove:
-                print "\n\n\n"
+                print ("\n\n\n")
                 display_hp(UserHp, ComputerHp)
                 UserMove = raw_input("\nChoose a move (Enter info1, info2, etc. for info on a speific move):\n1. Water Stream Encampment\t\t2. Abandonment\n3. Fang Interpolation\t\t4. (Super) Water Stream Rock Smashing Fist ")
                 if str(UserMove) == "info1" or str(UserMove) == "Info1" or str(UserMove) == "INFO1":
